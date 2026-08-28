@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>Bài 3 Web</title>
+    </head>
+    <body>
+        <MARQUEE>
+            <img src="ảnh khóa.jpg" width="200" height="100">
+        </MARQUEE>
+        <!--ol danh sách có thứ tự-->
+        <ol>
+            <li>C#</li>
+            <li>Python</li>
+            <li>Java Script</li>
+        </ol>
+        <!--ul danh sách không thứ tự-->
+        <ul>
+            <li>C#</li>
+            <li>Python</li>
+            <li>Java Script</li>
+        </ul>
+
+        <h1>Form đăng ký</h1>
+        <form>
+            <div>
+                <b>Họ và tên:</b><br>
+                <!--input không có type mặc định là text-->
+                <!--Thuộc thính readonly sử dụng khi không muốn người dùng đăng nhập thông tin vào input-->
+                <input type="text" placeholder="Họ và tên">
+            </div>
+            <div>
+                    <b>Mật khẩu:</b><br>
+                    <input type="password" placeholder="Mật khẩu">
+                </div>
+                <div>
+                    <b>Giới thiệu về bản thân</b><br>
+                    <textarea placeholder="Nhập thông tin"></textarea>
+                </div>
+                <div>
+                    <b>Email</b><br>
+                    <input type="Email" placeholder="Email">
+                </div>
+                <div>
+                    <!--Số đầu tiên: 0
+                    Số thứ hai: 3,6,9
+                    Số còn lại: 0-9-->
+                    <b>Số điện thoại</b><br>
+                    <input type="tel" placeholder="Số điện thoại"
+                    pattern="([0]{1}([3,6,9]{1})([0-9]{8}))">
+                </div>
+                <div>
+                    <b>Giới tính</b><br>
+                    <input type="radio" name="Giới tính" value="Nam"> Nam <br>
+                    <input type="radio" name="Giới tính" value="Nữ"> Nữ 
+                </div>
+                <div>
+                    <b>Sở thích</b><br>
+                    <input type="checkbox" name="Sở thích" value="Chơi game"> Chơi game <br>
+                    <input type="checkbox" name="Sở thích" value="Nghe nhạc"> Nghe nhạc <br>
+                    <input type="checkbox" name="Sở thích" value="Xem phim"> Xem phim
+                </div>
+                <div>
+                    <b>Trình duyệt web yêu thích</b><br>
+                    <select name="Trình duyệt">
+                        <option value="Internet Explorer">Internet Explorer</option>
+                        <option value="Firefox">Firefox</option>
+                        <option value="Safari">Safari</option>
+                        <option value="Chrome">Chrome</option>
+                        <option value="Opera">Opera</option>
+                        <option value="Microsoft Edge">Microsoft Edge</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="range" id="a" value="50"> 100
+                </div>
+                <div>
+                    <b>Năm sinh</b><br>
+                    <input type="number" name="Năm sinh" pleacehoder="Năm sinh">
+                </div>
+                <div>
+                    <input type="submit">
+                </div>
+                <div>
+                    <button>Xác nhận</button>
+                    <input type="reset">
+                </div>
+        </form>
+        
+
+    <iframe
+     width="560" 
+     height="315" 
+     src="https://www.youtube.com/embed/gJAbDSse5WM?si=ibHngRX1N5AvckvZ" 
+    title="YouTube video player" >
+    </iframe>
+    <video controls width="560" height="315">
+        <source src="video.mp4" type="video/mp4">
+        </video>
+        <audio controls>
+            <source src="Dự báo thời tiết hôm nay mưa.mp3" type="audio/mp3">
+        </audio>
+    </body>
+</html>
