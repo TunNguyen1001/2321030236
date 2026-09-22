@@ -92,7 +92,7 @@ main{
 
 .tkb{
     width: 95%;
-    height: 800px;
+    height: 1100px;
     border: 1px solid rgb(67, 186, 255);
     border-radius: 10px;
     margin: 20px auto;
@@ -124,16 +124,38 @@ main{
     width: 51%;
 }
 
-.anh-tkb {
+.bang-tkb{
+    width: 98%;
+    margin: 20px 10px;
+    border: 1px solid rgb(67, 186, 255);
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.thoi-khoa-bieu{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.thoi-khoa-bieu th, .thoi-khoa-bieu td{
+    border: 1px solid  rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+}
+
+.tien-trinh{
     width: 95%;
-    height: auto;
+    height: 690px;
+    border: 1px solid rgb(67, 186, 255);
+    border-radius: 10px;
     margin: 20px auto;
-    display: block;
+    color: white;
 }
 
 .anh-tien-trinh{
     width: 95%;
-    height: 700px;
+    height: 600px;
     margin: 20px auto;
     display: block;
 }
