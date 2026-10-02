@@ -88,12 +88,3 @@
 
 
 
-.anh-tkb {
-    width: 95%;
-    height: auto;
-    margin: 20px auto;
-    display: block;
-}
-
-
-<img class="anh-tkb" src="tkb.png" alt="Thời khóa biểu">
