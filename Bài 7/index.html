@@ -195,7 +195,7 @@
         //7-> 8: B
         //8-> 9: A
         //9-> 10: A+
-        var diem = 5;
+        var diem = 9;
         document.writeln("<br>");
         if(diem < 4){
             document.writeln("F");
@@ -216,6 +216,64 @@
             document.writeln("A+");
         }
 
+        //object: var name = {}
+        var thongTinSinhVien = {
+            hoTen: "Nguyễn Văn Tuân",
+            tuoi: 21,
+            gioiTinh: true, //true: nam, false: nữ
+            diaChi: {
+                thanhPho: "Hà Nội",
+                phuong: "Tây Hồ",
+                duong: "Xuân La"
+            }
+        }
+
+        var thongTinPhim = {
+            tenPhim: "Trại Buôn Người",
+            daoDien: "Toni Dương Bảo Anh",
+            dienVien: {
+                    dienVienChinh: ["Steven  Nguyễn","Quách Ngọc Ngoan","Tùng Mint"],
+                    dienVienPhu: ["Đinh Viết Tường","Hoàng Kim Ngọc","NSND Như Quỳnh"]
+            },
+            namSanXuat: 2026,
+            theLoai: ["Hành động", "Tình cảm"],
+            thoiLuong: 135,
+        }
+        document.writeln("<br>");
+        document.writeln(thongTinPhim.dienVien.dienVienChinh[2]);
+
+        //Switch case
+        var d = new Date();
+        var theDay = d.getDay();
+        document.writeln("<br>");
+        switch (theDay) {
+            case 5:
+                document.writeln("Finally Friday");
+                break;
+            case 6:
+                document.writeln("Super Saturday");
+                break;
+            case 0:
+                document.writeln("Sleepy Sunday");
+                break;
+            default:
+                document.writeln("I'm looking forward to the Weekend");
+        }
+
+        //Vòng lặp For
+        for(var index = 1; index <= 10; index++){
+            document.writeln("<br>");
+            document.writeln("<br>Xin chào!"+ index);
+        }
+
+        var danhSachSinhVien =["Thuy", "Tuấn", "Quỳnh", "Hà"];
+        document.writeln("<br> Xin chào " + danhSachSinhVien[0]);
+
+        for(var i =0; i < danhSachSinhVien.length; i++){
+            document.writeln(i + " <br>");
+            document.writeln(danhSachSinhVien[i]+ "<br>");
+        }
+       
 
     </script>
 
