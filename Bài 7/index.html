@@ -266,14 +266,37 @@
             document.writeln("<br>Xin chào!"+ index);
         }
 
-        var danhSachSinhVien =["Thuy", "Tuấn", "Quỳnh", "Hà"];
+        var danhSachSinhVien =["Thủy","Mai", "Tuấn", "Quỳnh", "Hà"];
         document.writeln("<br> Xin chào " + danhSachSinhVien[0]);
 
         for(var i =0; i < danhSachSinhVien.length; i++){
             document.writeln(i + " <br>");
             document.writeln(danhSachSinhVien[i]+ "<br>");
         }
-       
+
+        for(var i = 0; i < danhSachSinhVien.length; i++){
+            if(danhSachSinhVien[i] == "Tuấn" || danhSachSinhVien[i] == "Thủy"){
+                document.writeln("Xin chào " + danhSachSinhVien[i]);
+            }
+        }
+           
+        //popup boxes
+       // alert("Xin chào các bạn!");
+
+        //confirm
+       // var r= confirm("Press a button!");
+       // if(r == true){
+       //     document.writeln("You pressed OK");
+       // }
+       // else{
+       //     document.writeln("You pressed Cancel");
+       // }
+
+        //prompt
+        r=prompt("Nhập vào họ tên của bạn:","Nhập tên vào đây!");
+        document.writeln(r);
+
+
 
     </script>
 
