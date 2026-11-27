@@ -1,9 +1,13 @@
 <?php
+    include('connect.php');
     if(isset($_POST['tenDangNhap']) && isset($_POST['matKhau'])){
         $tenDangNhap = $_POST['tenDangNhap'];
         $matKhau = $_POST['matKhau'];
-    
-        if($tenDangNhap == "admin" && $matKhau == "123"){
+
+        $sql = "SELECT * FROM `nguoi_dung` WHERE `ten_dang_nhap` = '$tenDangNhap' and `mat_khau`= '$matKhau'";
+        $ketQua = mysqli_query($conn, $sql);
+        
+        if(mysqli_num_rows($ketQua) > 0){
             //echo "Đăng nhập thành công";
             session_start();
             $_SESSION['dangNhapThanhCong'] = "sucses";
@@ -13,21 +17,27 @@
         }
     }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Đăng nhập</title>
 </head>
 <body>
-    <?php
-        session_start();
-        if(!isset($_SESSION['dangNhapThanhCong']) && !$_SESSION['dangNhapThanhCong'] == "sucses"){
-            header('location: dangnhap.php');
-        }
-    ?>
-    <h1>Trang chủ</h1>
+    <h1>Đăng nhập</h1>
+    <form action="dangnhap.php" method="POST">
+        <div>
+            <p>Tên đăng nhập</p>
+            <input name="tenDangNhap" type="text">
+        </div>
+        <div>
+            <p>Mật khẩu</p>
+            <input name="matKhau" type="password">
+        </div>
+        <div>
+           <button>Đăng nhập</button>
+        </div>
+    </form>
 </body>
 </html>
